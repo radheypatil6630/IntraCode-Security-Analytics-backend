@@ -209,7 +209,7 @@ def register():
         new_user.generate_pat() # This will commit the new token to the DB
 
         flash('Account created successfully! Please log in.', 'success')
-        return redirect(url_for('login'))
+        return redirect("http://localhost:5173/login")
 
     # return render_template('register.html', title='Register')
     return redirect("http://localhost:5173/login")
